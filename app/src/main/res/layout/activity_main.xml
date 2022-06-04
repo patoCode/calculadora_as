@@ -159,7 +159,7 @@
             <ImageView
                 android:id="@+id/tvBack"
                 style="@style/NumberButtonStyle"
-                android:src="@drawable/backspace_white"
+                android:src="@drawable/backspace"
                 android:scaleType="center"
                 />
             <TextView
