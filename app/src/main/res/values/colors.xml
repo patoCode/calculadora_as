@@ -8,7 +8,13 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFF</color>
 
-    <color name="actionButton">#F57C00</color>
-    <color name="numeracionButton">#455A64</color>
+    <color name="actionButton">#431EC6</color>
+    <color name="signsButton">#2D3948</color>
+    <color name="equalButton">#927CE7</color>
+    <color name="numeracionButton">#161C22</color>
+    <color name="bgButton">#202933</color>
+    <color name="bgResult">#161C22</color>
+    <color name="expessionTint">#53606D</color>
+
 
 </resources>

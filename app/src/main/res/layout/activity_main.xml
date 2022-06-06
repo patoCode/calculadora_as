@@ -12,25 +12,34 @@
         android:id="@+id/tvExpression"
         android:layout_width="match_parent"
         android:layout_height="80sp"
-        android:textColor="@color/numeracionButton"
-        android:gravity="end"
+        android:textColor="#657483"
+        android:fontFamily="@font/lato_bold"
+        android:textStyle="bold"
+        android:gravity="end|bottom"
         android:ellipsize="start"
-        android:textSize="40sp"
+        android:textSize="30sp"
         android:singleLine="true"
+        android:layout_marginEnd="5dp"
+        tools:text="12345645"
         />
+
     <TextView
         android:id="@+id/tvResult"
         android:layout_width="match_parent"
         android:layout_height="100sp"
-        android:textColor="@color/numeracionButton"
         android:ellipsize="end"
         android:gravity="end"
-        android:textSize="30sp"
+        android:fontFamily="@font/lato_bold"
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        android:layout_marginEnd="5dp"
+        tools:text="12345645"
         />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="@color/bgButton"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -38,25 +47,27 @@
             android:layout_weight="1"
             android:orientation="horizontal"
             >
+
             <TextView
                 android:id="@+id/tvClear"
-                style="@style/ActionButtonStyle"
-                android:text="CE"
-                />
+                style="@style/SignButtonStyle"
+                android:textColor="#E78378"
+                android:text="CE" />
+
             <TextView
                 android:id="@+id/tvOpen"
-                style="@style/ActionButtonStyle"
+                style="@style/SignButtonStyle"
                 android:text="("
                 />
             <TextView
                 android:id="@+id/tvClose"
-                style="@style/ActionButtonStyle"
+                style="@style/SignButtonStyle"
                 android:text=")"
                 />
             <TextView
                 android:id="@+id/tvDivide"
                 style="@style/ActionButtonStyle"
-                android:text="/"
+                android:text="÷"
                 />
         </LinearLayout>
         <LinearLayout
@@ -164,10 +175,9 @@
                 />
             <TextView
                 android:id="@+id/tvEquals"
-                style="@style/ActionButtonStyle"
+                style="@style/EqualButtonStyle"
                 android:text="="
                 />
-
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

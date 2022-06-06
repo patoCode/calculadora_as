@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/DIP/calculadora_as/app/src/main/res/drawable/btn_action_bg.xml" value="0.2415" />
+        <entry key="..\:/DIP/calculadora_as/app/src/main/res/drawable/btn_equals_bg.xml" value="0.2415" />
+        <entry key="..\:/DIP/calculadora_as/app/src/main/res/drawable/btn_numeric_bg.xml" value="0.2415" />
+        <entry key="..\:/DIP/calculadora_as/app/src/main/res/drawable/btn_sign_bg.xml" value="0.2415" />
+        <entry key="..\:/DIP/calculadora_as/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/TemplatesAndroid/actividad_01/app/src/main/res/layout/activity_main.xml" value="0.23143115942028986" />
       </map>
     </option>

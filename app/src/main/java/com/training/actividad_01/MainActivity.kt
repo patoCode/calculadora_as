@@ -6,14 +6,10 @@ import android.util.Log
 import com.training.actividad_01.databinding.ActivityMainBinding
 import net.objecthunter.exp4j.ExpressionBuilder
 
-
 class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
-
         super.onCreate(savedInstanceState)
-
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -30,15 +26,17 @@ class MainActivity : AppCompatActivity() {
         binding.tvZero.setOnClickListener { appendOnExpresstion("0", true) }
         binding.tvDot.setOnClickListener { appendOnExpresstion(".", true) }
 
-//Operators
+        //Operators
         binding.tvPlus.setOnClickListener { appendOnExpresstion("+", false) }
-
-
+        binding.tvMinus.setOnClickListener { appendOnExpresstion("-", false) }
+        binding.tvMul.setOnClickListener { appendOnExpresstion("*", false) }
+        binding.tvDivide.setOnClickListener { appendOnExpresstion("/", false) }
+        binding.tvOpen.setOnClickListener { appendOnExpresstion("(", false) }
+        binding.tvClose.setOnClickListener { appendOnExpresstion(")", false) }
         binding.tvClear.setOnClickListener {
             binding.tvExpression.text = ""
             binding.tvResult.text = ""
         }
-
         binding.tvBack.setOnClickListener {
             val string = binding.tvExpression.text.toString()
             if(string.isNotEmpty()){
@@ -46,7 +44,6 @@ class MainActivity : AppCompatActivity() {
             }
             binding.tvResult.text = ""
         }
-
         binding.tvEquals.setOnClickListener {
             try {
                 val expression = ExpressionBuilder(binding.tvExpression.text.toString()).build()
@@ -60,22 +57,16 @@ class MainActivity : AppCompatActivity() {
                 Log.d("Exception"," message : " + e.message )
             }
         }
-
     }
 
-    fun appendOnExpresstion(string: String, canClear: Boolean) {
+    private fun appendOnExpresstion(string: String, canClear: Boolean) {
         if(binding.tvResult.text.isNotEmpty()){
             binding.tvExpression.text = ""
-            println("EMPTY "+string)
         }
-
         if (canClear) {
-            println("pCLEAR "+string)
             binding.tvResult.text = ""
             binding.tvExpression.append(string)
-            println("pCLEAR " + binding.tvExpression.text)
         } else {
-            println("NOCLEAR "+string)
             binding.tvExpression.append(binding.tvResult.text)
             binding.tvExpression.append(string)
             binding.tvResult.text = ""
