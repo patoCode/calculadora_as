@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/DIP/calculadora_as/app/src/main/res/drawable/bg_result.xml" value="0.1875" />
         <entry key="..\:/DIP/calculadora_as/app/src/main/res/drawable/btn_action_bg.xml" value="0.2415" />
         <entry key="..\:/DIP/calculadora_as/app/src/main/res/drawable/btn_equals_bg.xml" value="0.2415" />
         <entry key="..\:/DIP/calculadora_as/app/src/main/res/drawable/btn_numeric_bg.xml" value="0.2415" />
